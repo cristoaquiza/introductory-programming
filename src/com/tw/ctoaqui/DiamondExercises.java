@@ -17,7 +17,9 @@ public class DiamondExercises {
             System.out.println();
         }
 
-        for(int m = 0; m < n; m++) {
+        System.out.println("cris");
+
+        for(int m = 1; m < n; m++) {
             for (int p = 1; p < m+1; p++) {
                 System.out.print(" ");
             }
