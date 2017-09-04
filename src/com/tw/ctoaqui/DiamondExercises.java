@@ -3,7 +3,13 @@ package com.tw.ctoaqui;
 public class DiamondExercises {
 
     public static void main (String[] args) {
-        int n = 3;
+        int n = 10;
+        printUpperTriangle(n);
+        printACenteredDiamond();
+        printLowerTriangle(n);
+    }
+
+    private static void printUpperTriangle(int n) {
         for (int i = 0; i < n-1; i++) {
             for (int j = n-i; j > 1; j--) {
                 System.out.print(" ");
@@ -16,17 +22,21 @@ public class DiamondExercises {
             }
             System.out.println();
         }
+    }
 
+    private static void printACenteredDiamond() {
         System.out.println("cris");
+    }
 
-        for(int m = 1; m < n; m++) {
-            for (int p = 1; p < m+1; p++) {
+    private static void printLowerTriangle(int n) {
+        for(int i = 1; i < n; i++) {
+            for (int j = 1; j < i+1; j++) {
                 System.out.print(" ");
             }
-            for (int q = 0; q < (n-1)-m; q++) {
+            for (int k = 0; k < (n-1)-i; k++) {
                 System.out.print("*");
             }
-            for(int r = n; r > m; r--) {
+            for(int l = n; l > i; l--) {
                 System.out.print("*");
             }
             System.out.println();
